@@ -19,13 +19,17 @@ The Weather Forecast App is a React-based application that provides real-time we
 
 ## Installation
 
-1. Clone the repository: git clone https://github.com/JohnLe11/WeatherApp.git
+1. Clone the repository:
+git clone https://github.com/JohnLe11/WeatherApp.git
 
-2. Navigate to the project directory: cd WeatherApp
+3. Navigate to the project directory:
+cd WeatherApp
 
-3. Install dependencies: npm install react-scripts
+5. Install dependencies:
+npm install react-scripts
 
-4. Run: npm start
+7. Run:
+npm start
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
