@@ -1,70 +1,68 @@
 .weather {
-    width: 300px;
-    border-radius: 6px;
-    box-shadow: 10px -2px 20px 2px rgb(0 0 0 / 30%);
-    color: #fff;
-    background-color: #333;
-    margin: 20px auto 0 auto;
-    padding: 0 20px 20px 20px;
+  width: 320px; /* Width of the weather component */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+  background-color: #ffffff; /* Background color of the component */
+  margin: 20px auto; /* Centered with margin */
+  padding: 20px; /* Padding inside the component */
+  color: #333; /* Text color */
 }
 
 .top,
 .bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex; /* Flexbox for layout */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
 }
 
 .city {
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 1;
-    margin: 0;
-    letter-spacing: 1px;
+  font-weight: 700; /* Bold font for city name */
+  font-size: 22px; /* Font size for city name */
+  margin: 0; /* Remove default margin */
+  letter-spacing: 1.5px; /* Space between letters */
+  color: #333; /* Text color */
 }
 
 .description {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1;
-    margin: 0;
+  font-weight: 400; /* Regular font weight for description */
+  font-size: 16px; /* Font size for weather description */
+  color: #666; /* Description text color */
 }
 
 .icon {
-    width: 100px;
+  width: 120px; /* Width of the weather icon */
+  margin: 0 auto; /* Center the icon */
 }
 
 .temperature {
-    font-weight: 600;
-    font-size: 70px;
-    width: auto;
-    letter-spacing: -5px;
-    margin: 10px 0;
+  font-weight: 700; /* Bold font for temperature */
+  font-size: 72px; /* Large font size for temperature */
+  color: #ff6e6e; /* Red color for temperature */
 }
 
 .details {
-    width: 100%;
-    padding-left: 20px;
+  width: 100%; /* Full width for details section */
+  padding-left: 20px; /* Padding on the left */
 }
 
 .row {
-    display: flex;
-    justify-content: space-between;
+  display: flex; /* Flexbox for rows */
+  justify-content: space-between; /* Space between label and value */
 }
 
 .label {
-    text-align: left;
-    font-weight: 400;
-    font-size: 12px;
+  text-align: left; /* Align text to the left */
+  font-weight: 400; /* Regular font weight for labels */
+  font-size: 12px; /* Font size for labels */
 }
 
 .value {
-    text-align: right;
-    font-weight: 600;
-    font-size: 12px;
+  text-align: right; /* Align value text to the right */
+  font-weight: 600; /* Semi-bold font for values */
+  font-size: 12px; /* Font size for values */
 }
 
 .label.top {
-    font-size: 16px;
-    font-weight: 600;
+  font-size: 16px; /* Larger font size for top label */
+  font-weight: 600; /* Bold font weight for top label */
 }

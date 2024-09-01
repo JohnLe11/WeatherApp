@@ -1,12 +1,111 @@
+/* Global Styles */
 body {
   margin: 0;
-  font-family: "Roboto", Arial !important;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #d5d4d4;
+  font-family: "Roboto", Arial !important; /* Ensures a consistent font across the app */
+  -webkit-font-smoothing: antialiased; /* Smooths the appearance of text on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooths the appearance of text on Firefox for macOS */
+  background: linear-gradient(
+    135deg,
+    #74ebd5 0%,
+    #9face6 100%
+  ); /* Adds a gradient background to the body */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; /* Specifies the font for code blocks */
+}
+
+/* Header Styles */
+.App-header {
+  display: flex;
+  justify-content: space-between; /* Spaces out the header content evenly */
+  align-items: center; /* Vertically centers the header content */
+  padding: 25px 40px; /* Adds padding inside the header */
+  background: linear-gradient(
+    90deg,
+    #1c92d2,
+    #f2fcfe
+  ); /* Gradient background for the header */
+  color: white; /* White text color for the header */
+  border-bottom: 2px solid #61dafb; /* Adds a bottom border with a contrasting color */
+  animation: fadeIn 1s ease-in-out; /* Fades in the header on page load */
+}
+
+.App-header h1 {
+  font-size: 28px; /* Font size for the header title */
+  font-weight: 700; /* Bold font weight for the title */
+  margin: 0; /* Removes default margin */
+  letter-spacing: 1px; /* Adds space between letters for readability */
+  color: #ffffff; /* Ensures the title color is white */
+}
+
+/* Info Button Styles */
+.info-button {
+  background-color: #61dafb; /* Button background color */
+  border: none; /* Removes the default border */
+  border-radius: 20px; /* Rounds the button corners */
+  padding: 10px 20px; /* Adds padding inside the button */
+  color: #282c34; /* Button text color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  font-size: 14px; /* Font size for the button text */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for a raised effect */
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition effects */
+}
+
+.info-button:hover {
+  background-color: #21a1f1; /* Changes background color on hover */
+  transform: translateY(-2px); /* Slightly raises the button on hover */
+}
+
+/* Info Content Styles */
+.info-content {
+  background-color: #f9f9f9; /* Background color for the info section */
+  border-radius: 6px; /* Rounds the corners of the info section */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  padding: 20px; /* Adds padding inside the info section */
+  margin: 20px auto; /* Centers the info section with top and bottom margins */
+  max-width: 600px; /* Limits the width of the info section */
+  color: #333; /* Text color for the info section */
+}
+
+.info-content p {
+  margin: 0 0 10px; /* Adds bottom margin to paragraphs within the info section */
+}
+
+.info-content a {
+  color: #0073e6; /* Link color within the info section */
+  text-decoration: none; /* Removes underline from links */
+}
+
+.info-content a:hover {
+  text-decoration: underline; /* Adds underline to links on hover */
+}
+
+/* Responsive Header Styles */
+@media (max-width: 768px) {
+  .App-header {
+    flex-direction: column; /* Stacks header content vertically on smaller screens */
+    text-align: center; /* Centers header content */
+  }
+
+  .App-header h1 {
+    font-size: 24px; /* Smaller font size for the title on small screens */
+    margin-bottom: 10px; /* Adds bottom margin to separate title from other content */
+  }
+
+  .info-button {
+    width: 100%; /* Full-width button on small screens */
+    margin-top: 10px; /* Adds margin above the button */
+  }
+}
+
+/* Fade-In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0; /* Starts with 0 opacity */
+  }
+  to {
+    opacity: 1; /* Ends with full opacity */
+  }
 }
