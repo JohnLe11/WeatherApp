@@ -10,7 +10,7 @@ The Weather Forecast App is a React-based application that provides real-time we
 - Responsive Design: The app is fully responsive and works well on desktop and mobile devices.
 - Info Section: Includes additional information about the Product Manager Accelerator Program, which can be toggled on or off.
 
-##Technologies Used
+## Technologies Used
 - React: This is used to build the user interface.
 - GeoDB API: For fetching city data based on user input.
 - OpenWeatherMap API: For retrieving current weather and forecast data.
