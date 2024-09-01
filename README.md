@@ -33,6 +33,16 @@ The Weather Forecast App is a React-based application that provides real-time we
 
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## How to Use
+## How it works
 
-- Search any city and click on it to view Weather
+### City Search
+The app allows users to search for cities by name. The Search component handles the input and makes asynchronous requests to the GeoDB API to fetch matching cities. The city data is then displayed as options in the dropdown.
+
+### Current Weather
+When a user selects a city, the app fetches the current weather data from the OpenWeatherMap API. This data is displayed in the CurrentWeather component, which shows the temperature, weather description, and an appropriate weather icon.
+
+### 5-Day Forecast
+The app also fetches a 5-day weather forecast for the selected city. The forecast data is processed to group weather conditions by day, and the Forecast component displays this data in an accordion format. Each day’s forecast includes max/min temperatures and other details like pressure, humidity, and wind speed.
+
+## Contact
+For any questions or feedback, please feel free to contact me at johnle2046@gmail.com.
